@@ -2,38 +2,62 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "1. Which of the following is not a lipid?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Oils",                 
+        "b": "Fats",                  
+        "c": "Waxes",                 
+        "d": "Proteins" 
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
+      "correctAnswer": "d"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "2. Rancidity of oils/fats is because of",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Oxidation",                  
+        "b": "Lipolysis",                 
+        "c": "Thermolysis",                  
+        "d": "All of the above"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      
+      "correctAnswer": "d"
+      
+    },
+    {
+      "question": "3. At room temperature, unsaturated fatty acids will have",
+      "answers": {
+         "a": "Solid consistency",                  
+         "b": "Liquid consistency",                 
+         "c": "Waxy consistency",                 
+         "d": "Cannot be predicted"
       },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
+      
+      "correctAnswer": "b"
+      
+    },
+    {
+      "question": "4. Select the incorrect statement from the following",
+      "answers": {
+        "a": "Oils are saturated triglyceride",                  
+         "b": "Oils have lower melting points",                  
+         "c": "Oils are liquid at room temperature",                
+         "d": "Coconut oil is an examples of oils "
+      },
+      
+      "correctAnswer": "a"
+      
+    },
+    {
+      "question": "5. Which of the following is not a suitable solvent for oils and fats?",
+      "answers": {
+         "a": "Benzene",                  
+         "b": "Alcohol",                 
+         "c": "Hexane",                 
+         "d": "Water" 
+      },
+      
+      "correctAnswer": "d"
+      
     }
   ]
 }
