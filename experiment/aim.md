@@ -1,1 +1,1 @@
-### Aim of the experiment
+### This experiment aims for determination of free fatty acid content in fats and oils. The concept of acid-base titration is applied to determine free fatty acids (%FFA) content in the sample and estimate their quality on the basis of %FFA content.

@@ -2,38 +2,62 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "1. Free Fatty acid content of oil is expressed in terms of ",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "% Ascorbic acid",                  
+        "b": "% Oelic acid",                  
+        "c": "% Citric acid",                  
+        "d": "% Tartaric acid"                   
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
+      "correctAnswer": "b"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "2. Titrant used in determining % FFA",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "NaOH",                  
+        "b": "H2SO4",                 
+        "c": "HCl",                  
+        "d": "Chloroform"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      
+      "correctAnswer": "a"
+      
+    },
+    {
+      "question": "3. Which of the following can be directly calculated from free fatty acids content of fat/oil?",
+      "answers": {
+       "a": "Acid number",                  
+        "b": "Iodine number",                  
+        "c": "Saponification number",                  
+        "d": "Richert-Meissl number" 
       },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
+      
+      "correctAnswer": "a"
+      
+    },
+    {
+      "question": "4. Permissible limit of Free Fatty acid content of oil/fats is",
+      "answers": {
+        "a": "Less than 0.5%",                   
+        "b": "Less than 1.0%",                   
+        "c": "Less than 5.0%",                   
+        "d": "Less than 7.0%" 
+      },
+      
+      "correctAnswer": "a"
+      
+    },
+    {
+      "question": "5. The quality of oil during frying process?",
+      "answers": {
+         "a": "Deteriorated",                  
+        "b": "Improved",                  
+        "c": "Unchanged",                  
+        "d": "Cannot say anything" 
+      },
+      
+      "correctAnswer": "a"
+      
     }
   ]
 }
