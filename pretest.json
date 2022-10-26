@@ -1,0 +1,63 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Which of the following is not a lipid?",
+      "answers": {
+        "a": "Oils",                 
+        "b": "Fats",                  
+        "c": "Waxes",                 
+        "d": "Proteins" 
+      },
+      "correctAnswer": "d"
+    },
+    {
+      "question": "2. Rancidity of oils/fats is because of",
+      "answers": {
+        "a": "Oxidation",                  
+        "b": "Lipolysis",                 
+        "c": "Thermolysis",                  
+        "d": "All of the above"
+      },
+      
+      "correctAnswer": "d"
+      
+    },
+    {
+      "question": "3. At room temperature, unsaturated fatty acids will have",
+      "answers": {
+         "a": "Solid consistency",                  
+         "b": "Liquid consistency",                 
+         "c": "Waxy consistency",                 
+         "d": "Cannot be predicted"
+      },
+      
+      "correctAnswer": "b"
+      
+    },
+    {
+      "question": "4. Select the incorrect statement from the following",
+      "answers": {
+        "a": "Oils are saturated triglyceride",                  
+         "b": "Oils have lower melting points",                  
+         "c": "Oils are liquid at room temperature",                
+         "d": "Coconut oil is an examples of oils "
+      },
+      
+      "correctAnswer": "a"
+      
+    },
+    {
+      "question": "5. Which of the following is not a suitable solvent for oils and fats?",
+      "answers": {
+         "a": "Benzene",                  
+         "b": "Alcohol",                 
+         "c": "Hexane",                 
+         "d": "Water" 
+      },
+      
+      "correctAnswer": "d"
+      
+    }
+  ]
+}

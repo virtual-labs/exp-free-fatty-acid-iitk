@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HBTU vLab</title>
+
+  <link rel="stylesheet" href="./style/index.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Exp 1: Determination of free fatty acid content in fats and oils</h1>
+  </header>
+
+  <main>
+    <div class="super-container">
+      <div class="hero">
+        <div id="expriment" style="background-image: url('./assets/bg.png');">
+          <div class="step active" id="step-0">
+            <p style="text-align: center; font-size: 22px; width: 100%; background: #fff;padding: 10px 0;">Make yourself
+              familiar with the instruments & glassware <small style="font-size: 14px;">(hover for more info)</small>
+            </p>
+
+            <div class="instruments">
+              <span class="tooltip element" style="top: 320px;left: 570px;">
+                <img src="./assets/measuring cylinder.png" />
+                <span class="tooltiptext">Measuring cylinder</span>
+              </span>
+              <span class="tooltip element" style="top: 370px;left: 510px;">
+                <img src="./assets/empty flask.png" />
+                <span class="tooltiptext">Conical Flask</span>
+              </span>
+              <span class="tooltip element" style="left: 250px;top: 350px;">
+                <img src="./assets/weighing-scale.png" />
+                <span class="tooltiptext">Weighing Scale</span>
+              </span>
+
+              <span class="tooltip element" style="left: 600px;top: 350px;">
+                <img src="./assets/hot plate off.png" />
+                <span class="tooltiptext">Hot plate</span>
+              </span>
+
+              <span class="tooltip element" style="top: 130px; left: 500px; z-index: 1;">
+                <img src="./assets/burette/ff0.png" />
+                <span class="tooltiptext">Burette</span>
+              </span>
+
+              <img src="assets/burette/burette stand.png" class="element" style="top: 130px; left: 470px;z-index: 0;">
+            </div>
+
+          </div>
+
+          <div class="step" id="step-1">
+            <p style="text-align: center; font-size: 28px; background: #fff;padding: 10px 0;">Step 1: Select the sample
+            </p>
+
+            <div class="instruments step1-tools">
+              <div class="element tooltip" onclick="selectSample(this, 0)" style="left: 260px;top: 280px;">
+                <img src="./assets/Fresh Oil.png" />
+                <div class="tooltiptext">Select This Sample</div>
+              </div>
+              <div class="element tooltip" onclick="selectSample(this, 1)" style="left: 370px;top: 280px;">
+                <img src="./assets/1passoil.png" />
+                <div class="tooltiptext">Select This Sample</div>
+              </div>
+              <div class="element tooltip" onclick="selectSample(this, 2)" style="left: 490px;top: 280px;">
+                <img src="./assets/2passoil.png" />
+                <div class="tooltiptext">Select This Sample</div>
+              </div>
+              <div class="element tooltip" onclick="selectSample(this, 3)" style="left: 600px;top: 280px;">
+                <img src="./assets/3passoil.png" />
+                <div class="tooltiptext">Select This Sample</div>
+              </div>
+            </div>
+
+            <div class="popup-question question-1" style="opacity: 0;">
+              <p style="margin: 10px;">Which of the sample has darkest color?
+              </p>
+              <select style="margin: 10px;" class="question" onchange="validateanswer('.question-1', 4)">
+                <option value="0">--Select Answer--</option>
+                <option value="1">Fresh oil</option>
+                <option value="2">1 Pass oil</option>
+                <option value="3">2 Pass oil</option>
+                <option value="4">3 Pass oil</option>
+              </select>
+              <p style="margin: 10px;" class="answer"></p>
+            </div>
+          </div>
+
+          <div class="step" id="step-2">
+            <p style="text-align: center; font-size: 28px;background: #fff;padding: 10px 0;">Step 2: Weigh 2gms of oil
+              sample in conical flask</p>
+
+            <div class="instruments">
+
+              <div id="sampleimage" onclick="hoverSample()" class="element"
+                style="top: 260px;left: 600px;display: flex;justify-content: center;align-items: center;flex-direction: column;">
+                <img />
+                <small style="opacity: 0;background: #000; color:#fff; padding: 4px; margin-top: 10px;">click to hold
+                  sample</small>
+              </div>
+
+              <div class="element" id="placeflask" onclick="placeFlask()">
+                <img src="./assets/empty flask.png" id="step-2-flask" />
+                <small style="background: #000; color:#fff; padding: 4px; margin-top: 10px;">
+                  click to place flask</small>
+              </div>
+
+              <img src="./assets/weighing-scale.png" class="element" style="top: 350px;left: 230px;" />
+            </div>
+
+            <button class="element" onclick="addSample()" style="top: 430px;left: 200px; opacity: 0;">
+              <img src="./assets/add.svg">
+            </button>
+
+            <button class="element" onclick="zeroReading()"
+              style="top: 430px;left: 300px; opacity: 0;z-index: 5;font-size: 28px;font-weight: 400;font-family: monospace;">
+              <img src="./assets/zero.svg">
+            </button>
+
+            <button class="element" onclick="removeSample()" style="top: 430px;left: 400px; opacity: 0;">
+              <img src="./assets/remove.svg">
+            </button>
+
+            <div class="element reading-meter">
+              <div id="sample-reading">0.0</div>
+            </div>
+
+            <div class="popup-question question-2" style="opacity: 0;">
+              <p style="margin: 10px;">What is the required quantity of oil to be taken for % FFA content?
+              </p>
+              <select style="margin: 10px;" class="question" onchange="validateanswer('.question-2', 1)">
+                <option value="0">--Select Answer--</option>
+                <option value="1">0-5 g</option>
+                <option value="2">10-20 g</option>
+                <option value="3">20-30 g</option>
+                <option value="4">30-40 g</option>
+              </select>
+              <p style="margin: 10px;" class="answer"></p>
+            </div>
+          </div>
+
+          <div class="step" id="step-3">
+            <p style="text-align: center; font-size: 28px;background: #fff;padding: 10px 0;">Step 3: Add 50 ml ethyl
+              alcohol in conical flask</p>
+
+            <div class="instruments">
+              <div class="element" id="step3flask" onclick="pourAlcohol()"
+                style="top: 330px; left: 300px; display: flex;justify-content: center;align-items: center;flex-direction: column;">
+                <img />
+                <small style="background: #000; color:#fff; padding: 4px; margin-top: 5px;opacity: 0;">click to pour
+                  alcohol</small>
+              </div>
+
+              <div class="element" id="measuring" onclick="measureAlcohol()"
+                style="top: 300px;left: 430px; display: flex;justify-content: center;align-items: center;flex-direction: column;">
+                <img src="./assets/cylinder/cylinder.png" />
+                <small style="background: #000; color:#fff; padding: 4px; margin-top: 5px;">click to pour
+                  alcohol</small>
+              </div>
+
+              <img src="./assets/alcohol.png" id="alcoholbottle" class="element" style="top: 299px;left: 620px;" />
+              <img src="./assets/bottle cap.png" id="alcoholCabottleCap" class="element"
+                style="top: 290px; left: 635px;" />
+            </div>
+
+            <div class="popup-question question-3" style="opacity: 0;">
+              <p style="margin: 10px;">What is the required quantity of oil to be taken for % FFA content?
+              </p>
+              <select style="margin: 10px;" class="question" onchange="validateanswer('.question-3', 1)">
+                <option value="0">--Select Answer--</option>
+                <option value="1">like dissolves like</option>
+                <option value="2">like dissolves unlike</option>
+                <option value="3">Both (a) and (b)</option>
+                <option value="4">None of these</option>
+              </select>
+              <p style="margin: 10px;" class="answer"></p>
+            </div>
+
+          </div>
+
+          <div class="step" id="step-4">
+            <p style="text-align: center; font-size: 28px;background: #fff;padding-top: 10px">
+              Step 4: Heat the mixture upto boiling condition <br />
+            <div
+              style="margin-top:5px;background:lightyellow;font-weight:600; padding: 5px 0; font-size: 18px; text-align: center;">
+              ⚠
+              Please proceed with caution while working with burner</div>
+            </p>
+
+            <div class="instruments">
+              <div class="element" onclick="turnOnHotPlate()" id="hotplate1"
+                style="top: 350px;left: 373px; display: flex; justify-content: center;align-items: center;flex-direction: column;">
+                <img src="./assets/hot plate off.png" />
+                <small style="background: #000; color:#fff; padding: 4px; margin-top: 10px;">click to turn on hot
+                  plate</small>
+              </div>
+
+              <div class="element" onclick="placeFlaskOnBurner()" id="step-4-flask"
+                style="top: 330px;left: 550px; display: flex; justify-content: center;align-items: center;flex-direction: column;">
+                <img />
+                <small style="background: #000;opacity:0; color:#fff; padding: 4px; margin-top: 10px;">click to place
+                  flask</small>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="step" id="step-5">
+            <p style="text-align: center; font-size: 28px;background: #fff;padding: 10px 0;">Step 5: Add 2-3 drops of
+              phenolpthalein indicator in hot condition</p>
+
+            <div class="instruments">
+              <div class="element" id="step5flask" onclick="pourPhenolphthalein()"
+                style="top: 330px;left: 430px; display: flex;justify-content: center;align-items: center;flex-direction: column;">
+                <img />
+                <small style="background: #000; color:#fff; padding: 4px; margin-top: 5px;">click to pour
+                  phenolphthalein</small>
+              </div>
+
+              <img src="./assets/Phenolphthalein.png" id="phenolphthalein" class="element"
+                style="top: 350px;left: 620px;" />
+            </div>
+          </div>
+
+          <div class="step" id="step-6">
+            <p style="text-align: center; font-size: 28px;background: #fff;padding: 10px 0;">Step 6: Titrate the mixture
+              with 0.1 N NaOH solution</p>
+
+            <div class="instruments">
+              <img class="element" id="burettestep6" src="./assets/burette/ff0.png"
+                style="left: 460px; top: 100px; font-weight: 600;" />
+              <img class="element" src="./assets/burette stand.png"
+                style="left: 430px; top: 130px; font-weight: 600;" />
+              <img class="element" id="step-6-flask" style="left: 446px; top: 370px; font-weight: 600;" />
+
+              <button class="element"
+                style="opacity: 0; top:250px;left: 300px;font-weight: 600; background: #000; color: #fff;"
+                onclick="openKnob()">Open Knob</button>
+              <button class="element"
+                style="opacity: 0; top:250px;left: 550px;font-weight: 600; background: #000; color: #fff;"
+                onclick="closeKnob()">Close Knob</button>
+            </div>
+
+            <div class="element" style="bottom:0px; height:50px; width: 100%;  background: #ccc">
+              <div style="width:100%; height: 100%; background: hotpink; display:grid; place-items: center;"
+                id="readingSlider">
+                <p style="font-weight: 600; font-size: 28px; color:#fff" id="readingText">0 ml</p>
+              </div>
+            </div>
+
+            <div class="element" id="naoh" onclick="buretteFill()"
+              style="top: 299px;left: 620px; display: flex;justify-content: center;align-items: center;flex-direction: column;">
+              <img src="./assets/NaOH Soln.png" />
+              <small style="background: #000; color:#fff; padding: 4px; margin-top: 5px;">click to pour
+                0.1N NaOH</small>
+            </div>
+
+            <div class="popup-question question-4" style="opacity: 0;">
+              <p style="margin: 10px;">Which type of titration has been used to determine % FFA</p>
+              <select style="margin: 10px;" class="question" onchange="validateanswer('.question-4', 4)">
+                <option value="0">--Select Answer--</option>
+                <option value="1">Redox titration</option>
+                <option value="2">Precipitation titration</option>
+                <option value="3">Complexometric titration</option>
+                <option value="4">Acid base titration</option>
+              </select>
+              <p style="margin: 10px;" class="answer"></p>
+            </div>
+          </div>
+
+          <div class="step" id="step-7" style="background-color: #fff; background-image: unset; padding: 15px;">
+
+            <div id="observation">
+              <p style="font-size: 28px; text-align: center;">Observation Table</p>
+              <br />
+              <table style="width: 100%;">
+                <tr>
+                  <th rowspan="2" style="background: #000;font-size: 18px;color: #fff;font-weight: 600;">Selected sample
+                  </th>
+                  <th rowspan="2" style="background: #000;font-size: 18px;color: #fff;font-weight: 600;">Weight of
+                    sample (g) (W) </th>
+                  <th rowspan="2" style="background: #000;font-size: 18px;color: #fff;font-weight: 600;">Normality of
+                    NaOH (N) </th>
+                  <th colspan="2" style="background: #000;font-size: 18px;color: #fff;font-weight: 600;">Burette reading
+                    (ml) </th>
+                  <th rowspan="2" style="background: #000;font-size: 18px;color: #fff;font-weight: 600;">Titrant used
+                    (ml)</th>
+                </tr>
+                <tr>
+                  <th>Initial value </th>
+                  <th>Final value </th>
+                </tr>
+                <tr>
+                  <th id="observationSample"></th>
+                  <th>2.0</th>
+                  <th>0.1</th>
+                  <th>0.0</th>
+                  <th class="observationReading"></th>
+                  <th class="observationReading"></th>
+                </tr>
+              </table>
+            </div>
+
+            <br />
+            <br />
+
+            <div class="result">
+              <p>
+                FFA(%) = <input type="text" id="result-user">
+                <input type="button" value="Check" style="border: 0;padding: 5px;font-weight: 600;font-size: 18px; background-color: lightgreen;" onclick="validateresult()">
+                <input type="button" value="Formula" style="border: 0;padding: 5px;font-weight: 600;font-size: 18px; background-color: lightsalmon;" onclick="toggleformula()">
+                <span class="result-status" style="margin-top: 20px; font-weight: 600; font-size: 18px;"></span>
+              </p>
+            </div>
+
+            <div id="forumla" style="float: right; opacity: 0; margin-right: 20px; margin-top: -65px;">
+              <img src="./assets/calculation.png" width="300" />
+            </div>
+
+            <table style="opacity: 0; margin-top: 5px;" class="dense result-steps">
+              <tr>
+                <td rowspan="2" style="font-size: 12px;">FFA (%, Oleic acid) =</td>
+                <th style="font-size: 12px;border-bottom: 1px solid #000; width: 150px;">V x N x 28.2</th>
+              </tr>
+
+              <tr>
+                <th style="font-size: 12px;">W</th>
+              </tr>
+
+              <tr>
+                <td rowspan="2" style="font-size: 12px;">FFA (%, Oleic acid) =</td>
+                <th style="font-size: 12px;border-bottom: 1px solid #000;width: 150px;">
+                  <span class="observationReading"></span> x 0.1 x 28.2</th>
+              </tr>
+
+              <tr>
+                <th style="font-size: 12px;">2</th>
+              </tr>
+
+              <tr>
+                <td style="font-size: 12px;">FFA (%, Oleic acid) =</td>
+                <th style="font-size: 12px;" id="result1"></th>
+              </tr>
+            </table>
+          </div>
+
+          <div class="step" id="step-8" style="background-color: #d4dbff; background-image: unset; padding: 20px;">
+            <p style="font-size: 28px; text-align: left;">Inference</p>
+
+            <div class="popup-question question-5" style="opacity: 0;">
+              <p style="margin: 10px;">The maximum permissible limit of FFA as per FSSAI in the edible oil is 0.5%</p>
+              <select style="margin: 10px;" class="question"
+                onchange="validateanswer('.question-5', 1); gsap.to('.inferencetext', {delay: 2.5, opacity:1});  addTask('<b>Step 8</b>Inference')">
+                <option value="0">--Select Answer--</option>
+                <option value="1">True</option>
+                <option value="2">False</option>
+              </select>
+              <p style="margin: 10px;" class="answer"></p>
+            </div>
+
+            <p class="inferencetext" style="opacity: 0; font-size: 18px; text-align: center; margin-top: 20px;">
+              The limit of FFA as per FSSAI standard is 0.05%. The FFA content of the given sample is 0.28%.<br />
+              So, this sample is in the FSSAI range and safe for edible purposes.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="sidebar">
+        <h1>Task Completed</h1>
+        <ul id="taskslist">
+          <li><b>Step 0</b> Instruments Observation</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="controls" class="active">
+      <button id="nextbutton" onclick="next()" style="font-size: 28px;background: #000;color: #fff;">
+        Next
+      </button>
+    </div>
+  </main>
+
+  <script src="./scripts/gsap.min.js"></script>
+  <script src="./scripts/index.js"></script>
+  <script src="./scripts/step1.js"></script>
+  <script src="./scripts/step2.js"></script>
+  <script src="./scripts/step3.js"></script>
+  <script src="./scripts/step4.js"></script>
+  <script src="./scripts/step5.js"></script>
+  <script src="./scripts/step6.js"></script>
+<script src="../assets/js/iframeResize.js"></script></body>
+
+</html>
