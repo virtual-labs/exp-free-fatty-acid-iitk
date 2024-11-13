@@ -95,7 +95,7 @@ function closeKnob() {
 
         //    document.querySelector('#reading1').innerHTML = `${readingTitration.toPrecision(2)}`
 
-            result = ((readingTitration.toPrecision(2) * 0.0282 * 10) / 2).toPrecision(4)
+            result = ((readingTitration.toPrecision(2) * 0.0282 * 10 * 10) / 2).toPrecision(4)
 
             document.querySelector('#result1').innerHTML = result
 
@@ -117,13 +117,23 @@ function toggleformula() {
         gsap.to('#forumla', {opacity: 0})
 }
 
+var task = true;
 function validateresult() {
-    addTask('<b>Step 7</b>Calculation & Result')
+    if(task){
+        addTask('<b>Step 7</b>Calculation & Result')
+        task = false;
+    }
+   
     var val = document.querySelector('#result-user').value
+    console.log(val);
+    if(Math.abs(val - result) == null || val == undefined || val == 0 || val == null) {
+        document.querySelector('.result-status').innerHTML = '<span style="color:red">Please Fill Some Value</span>'
 
-    if(Math.abs(val - result) < 0.4)
-        document.querySelector('.result-status').innerHTML = '<span style="color:green">Correct Answer</span>'
-    else 
+        document.querySelector('.result-status').innerHTML += '<input type="button" style="border: 0;padding: 5px;font-weight: 600;font-size: 18px;  background-color: lightskyblue;" value="result" style="margin-left:10px;" onclick="showsteps()">'}
+    else if(Math.abs(val - result) < 0.4){
+        document.querySelector('.result-status').innerHTML = '<span style="color:green">Correct Answer</span>'}
+     
+        else
         document.querySelector('.result-status').innerHTML = '<span style="color:red">Wrong Answer</span>'
 
         document.querySelector('.result-status').innerHTML += '<input type="button" style="border: 0;padding: 5px;font-weight: 600;font-size: 18px;  background-color: lightskyblue;" value="result" style="margin-left:10px;" onclick="showsteps()">'
