@@ -5,6 +5,8 @@ var controls = document.querySelector('#controls')
 var task_done = true
 
 function next() {
+    console.log(curent_step);
+    if(curent_step == 8){console.log("hi"); gsap.to(".question-5", { opacity: 1 });}
     if (curent_step < steps.length - 1) {
         curent_step++
         task_done = false

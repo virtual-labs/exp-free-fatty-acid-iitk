@@ -20,12 +20,11 @@
 6. Stop the titration when slight pink color appears that persist for 30 seconds.
 7. Record the volume of NaOH used. 
 8. Calculate the FFA content using the equation below:
-
-<img src="images/FormulaFFA.png" alt="Formula FFA">
+<img src="images/Formula FFA.png" alt="Formula FFA">
 
    Where, <br>
       V= volume of NaOH used (ml)<br>
       N= Normality of NaOH <br>
       W= weight of sample (gm)<br>
 
-9. Estimate the quality of sample on the basis of determined %FFA value.
+9. Estimate the quality of sample on the basis of determined %FFA value. 
