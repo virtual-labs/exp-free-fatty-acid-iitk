@@ -101,7 +101,7 @@
     },
 
     {
-      question: "⦁	Titrant used in determining % FFA",  ///// Write the question inside double quotes
+      question: "Titrant used in determining % FFA",  ///// Write the question inside double quotes
       answers: {
         a: "NaOH",                  ///// Write the option 1 inside double quotes
         b: "H2SO4",                  ///// Write the option 2 inside double quotes
@@ -135,7 +135,7 @@
     },
 
     {
-      question: "⦁	The quality of oil during frying process?",  ///// Write the question inside double quotes
+      question: "The quality of oil during frying process?",  ///// Write the question inside double quotes
       answers: {
         a: "Deteriorated",                  ///// Write the option 1 inside double quotes
         b: "Improved",                  ///// Write the option 2 inside double quotes
