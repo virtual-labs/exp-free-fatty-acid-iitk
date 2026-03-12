@@ -101,24 +101,24 @@
     },
 
     {
-     question: "Rancidity of oils/fats is because of",  ///// Write the question inside double quotes
+     question: "Rancidity of oils and fats primarily occurs due to:",  ///// Write the question inside double quotes
       answers: {
-        a: "Oxidation",                  ///// Write the option 1 inside double quotes
-        b: "Lipolysis",                  ///// Write the option 2 inside double quotes
-        c: "Thermolysis",                  ///// Write the option 3 inside double quotes
-        d: "All of the above"                   ///// Write the option 4 inside double quotes
+        a: "Oxidation of unsaturated fatty acids",                  ///// Write the option 1 inside double quotes
+        b: "Hydrolysis of triglycerides",                  ///// Write the option 2 inside double quotes
+        c: "Thermal decomposition of glycerol",                  ///// Write the option 3 inside double quotes
+        d: "Polymerization of saturated fats"                   ///// Write the option 4 inside double quotes
       },
-      correctAnswer: "d"                ///// Write the correct option inside double quotes
+      correctAnswer: "a"                ///// Write the correct option inside double quotes
     },                                  ///// To add more questions, copy the section below 
                 
     
     {
-      question: "At room temperature, unsaturated fatty acids will have",  ///// Write the question inside double quotes
+      question: "At room temperature, unsaturated fatty acids generally exhibit:",  ///// Write the question inside double quotes
        answers: {
          a: "Solid consistency",                  ///// Write the option 1 inside double quotes
          b: "Liquid consistency",                  ///// Write the option 2 inside double quotes
-         c: "Waxy consistency",                  ///// Write the option 3 inside double quotes
-         d: "Cannot be predicted"                   ///// Write the option 4 inside double quotes
+         c: "Crystalline structure",                  ///// Write the option 3 inside double quotes
+         d: "High melting point"                   ///// Write the option 4 inside double quotes
        },
        correctAnswer: "b"                ///// Write the correct option inside double quotes
      },                                  ///// To add more questions, copy the section below 
@@ -145,7 +145,9 @@
          d: "Water"                   ///// Write the option 4 inside double quotes
        },
        correctAnswer: "d"                ///// Write the correct option inside double quotes
-     },                                  ///// To add more questions, copy the section below 
+     },  
+    
+    ///// To add more questions, copy the section below 
                  ///// this line
 
 
