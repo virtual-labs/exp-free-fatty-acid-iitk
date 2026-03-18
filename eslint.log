@@ -1,0 +1,145 @@
+
+/home/runner/work/exp-free-fatty-acid-iitk/exp-free-fatty-acid-iitk/experiment/posttest.js
+  18:12  warning  'letter' is not defined  no-undef
+  22:75  warning  'letter' is not defined  no-undef
+  23:15  warning  'letter' is not defined  no-undef
+  24:39  warning  'letter' is not defined  no-undef
+
+/home/runner/work/exp-free-fatty-acid-iitk/exp-free-fatty-acid-iitk/experiment/pretest.js
+  18:12  warning  'letter' is not defined  no-undef
+  22:75  warning  'letter' is not defined  no-undef
+  23:15  warning  'letter' is not defined  no-undef
+  24:39  warning  'letter' is not defined  no-undef
+
+/home/runner/work/exp-free-fatty-acid-iitk/exp-free-fatty-acid-iitk/experiment/simulation/scripts/gsap.min.js
+  10:83     warning  'exports' is not defined                                         no-undef
+  10:125    warning  'define' is not defined                                          no-undef
+  10:138    warning  'define' is not defined                                          no-undef
+  10:14192  warning  Unnecessary escape character: \+                                 no-useless-escape
+  10:14289  warning  Unnecessary escape character: \.                                 no-useless-escape
+  10:21628  warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+  10:36417  warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+  10:46032  warning  'e' is defined but never used                                    no-unused-vars
+  10:46357  warning  'e' is defined but never used                                    no-unused-vars
+  10:46360  warning  'r' is defined but never used                                    no-unused-vars
+  10:48303  warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+  10:48360  warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+  10:57184  warning  Empty block statement                                            no-empty
+  10:60246  warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+  10:64959  warning  Unnecessary escape character: \(                                 no-useless-escape
+  10:67756  warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+  10:67859  warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+
+/home/runner/work/exp-free-fatty-acid-iitk/exp-free-fatty-acid-iitk/experiment/simulation/scripts/index.js
+   7:10  warning  'next' is defined but never used            no-unused-vars
+   9:45  warning  'gsap' is not defined                       no-undef
+  16:10  warning  'validateanswer' is defined but never used  no-unused-vars
+  24:5   warning  'gsap' is not defined                       no-undef
+  29:10  warning  'addTask' is defined but never used         no-unused-vars
+
+/home/runner/work/exp-free-fatty-acid-iitk/exp-free-fatty-acid-iitk/experiment/simulation/scripts/step1.js
+  13:10  warning  'selectSample' is defined but never used  no-unused-vars
+  18:5   warning  'gsap' is not defined                     no-undef
+  19:5   warning  'gsap' is not defined                     no-undef
+  22:13  warning  'Back' is not defined                     no-undef
+  42:5   warning  'gsap' is not defined                     no-undef
+  43:5   warning  'addTask' is not defined                  no-undef
+
+/home/runner/work/exp-free-fatty-acid-iitk/exp-free-fatty-acid-iitk/experiment/simulation/scripts/step2.js
+  144:10   warning  'hoverSample' is defined but never used   no-unused-vars
+  146:20   warning  'gsap' is not defined                     no-undef
+  161:10   warning  'addSample' is defined but never used     no-unused-vars
+  162:10   warning  'task_done' is not defined                no-undef
+  171:29   warning  'gsap' is not defined                     no-undef
+  184:61   warning  'Sine' is not defined                     no-undef
+  186:33   warning  'gsap' is not defined                     no-undef
+  187:53   warning  'SteppedEase' is not defined              no-undef
+  188:99   warning  'flaskSamples' is not defined             no-undef
+  188:112  warning  'selectedSample' is not defined           no-undef
+  192:33   warning  'gsap' is not defined                     no-undef
+  193:53   warning  'SteppedEase' is not defined              no-undef
+  194:99   warning  'flaskSamples' is not defined             no-undef
+  194:112  warning  'selectedSample' is not defined           no-undef
+  206:10   warning  'removeSample' is defined but never used  no-unused-vars
+  207:10   warning  'task_done' is not defined                no-undef
+  218:10   warning  'zeroReading' is defined but never used   no-unused-vars
+  219:10   warning  'task_done' is not defined                no-undef
+  225:9    warning  'gsap' is not defined                     no-undef
+  235:9    warning  'gsap' is not defined                     no-undef
+  237:17   warning  'gsap' is not defined                     no-undef
+  238:17   warning  'addTask' is not defined                  no-undef
+  243:9    warning  'task_done' is not defined                no-undef
+  246:10   warning  'placeFlask' is defined but never used    no-unused-vars
+  249:9    warning  'gsap' is not defined                     no-undef
+  251:21   warning  'gsap' is not defined                     no-undef
+  258:42   warning  'SteppedEase' is not defined              no-undef
+
+/home/runner/work/exp-free-fatty-acid-iitk/exp-free-fatty-acid-iitk/experiment/simulation/scripts/step3.js
+   6:10   warning  'measureAlcohol' is defined but never used  no-unused-vars
+  13:9    warning  'gsap' is not defined                       no-undef
+  15:20   warning  'gsap' is not defined                       no-undef
+  26:53   warning  'Sine' is not defined                       no-undef
+  27:21   warning  'gsap' is not defined                       no-undef
+  28:54   warning  'SteppedEase' is not defined                no-undef
+  47:10   warning  'pourAlcohol' is defined but never used     no-unused-vars
+  48:29   warning  'task_done' is not defined                  no-undef
+  54:20   warning  'gsap' is not defined                       no-undef
+  64:53   warning  'Sine' is not defined                       no-undef
+  67:21   warning  'gsap' is not defined                       no-undef
+  68:54   warning  'SteppedEase' is not defined                no-undef
+  73:21   warning  'gsap' is not defined                       no-undef
+  74:54   warning  'SteppedEase' is not defined                no-undef
+  75:89   warning  'flaskSamples' is not defined               no-undef
+  75:102  warning  'selectedSample' is not defined             no-undef
+  83:21   warning  'gsap' is not defined                       no-undef
+  85:21   warning  'addTask' is not defined                    no-undef
+
+/home/runner/work/exp-free-fatty-acid-iitk/exp-free-fatty-acid-iitk/experiment/simulation/scripts/step4.js
+   7:10   warning  'turnOnHotPlate' is defined but never used      no-unused-vars
+  11:5    warning  'gsap' is not defined                           no-undef
+  12:5    warning  'gsap' is not defined                           no-undef
+  15:10   warning  'placeFlaskOnBurner' is defined but never used  no-unused-vars
+  18:13   warning  'gsap' is not defined                           no-undef
+  20:24   warning  'gsap' is not defined                           no-undef
+  25:50   warning  'SteppedEase' is not defined                    no-undef
+  26:87   warning  'flaskSamples' is not defined                   no-undef
+  26:100  warning  'selectedSample' is not defined                 no-undef
+  29:25   warning  'task_done' is not defined                      no-undef
+  30:25   warning  'addTask' is not defined                        no-undef
+
+/home/runner/work/exp-free-fatty-acid-iitk/exp-free-fatty-acid-iitk/experiment/simulation/scripts/step5.js
+   3:10  warning  'pourPhenolphthalein' is defined but never used  no-unused-vars
+   3:30  warning  'params' is defined but never used               no-unused-vars
+  10:9   warning  'gsap' is not defined                            no-undef
+  12:20  warning  'gsap' is not defined                            no-undef
+  26:21  warning  'task_done' is not defined                       no-undef
+  28:21  warning  'addTask' is not defined                         no-undef
+
+/home/runner/work/exp-free-fatty-acid-iitk/exp-free-fatty-acid-iitk/experiment/simulation/scripts/step6.js
+   17:10  warning  'buretteFill' is defined but never used     no-unused-vars
+   19:20  warning  'gsap' is not defined                       no-undef
+   27:21  warning  'gsap' is not defined                       no-undef
+   28:55  warning  'SteppedEase' is not defined                no-undef
+   41:10  warning  'openKnob' is defined but never used        no-unused-vars
+   56:17  warning  'gsap' is not defined                       no-undef
+   56:58  warning  'Sine' is not defined                       no-undef
+   59:47  warning  'selectedSample' is not defined             no-undef
+   74:46  warning  'selectedSample' is not defined             no-undef
+   80:10  warning  'closeKnob' is defined but never used       no-unused-vars
+   87:39  warning  'selectedSample' is not defined             no-undef
+   87:86  warning  'task_done' is not defined                  no-undef
+   90:13  warning  'gsap' is not defined                       no-undef
+  102:13  warning  'addTask' is not defined                    no-undef
+  103:15  warning  Empty block statement                       no-empty
+  111:10  warning  'toggleformula' is defined but never used   no-unused-vars
+  115:9   warning  'gsap' is not defined                       no-undef
+  117:9   warning  'gsap' is not defined                       no-undef
+  121:10  warning  'validateresult' is defined but never used  no-unused-vars
+  123:9   warning  'addTask' is not defined                    no-undef
+  142:10  warning  'showsteps' is defined but never used       no-unused-vars
+  143:5   warning  'gsap' is not defined                       no-undef
+  144:5   warning  'gsap' is not defined                       no-undef
+  147:5   warning  'task_done' is not defined                  no-undef
+
+✖ 122 problems (0 errors, 122 warnings)
+
