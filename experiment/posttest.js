@@ -138,7 +138,7 @@
       question: "The quality of oil during the frying process generally becomes:",  ///// Write the question inside double quotes
       answers: {
         a: "Deteriorated",                  ///// Write the option 1 inside double quotes
-        b: "Deteriorated",                  ///// Write the option 2 inside double quotes
+        b: "Improved",                  ///// Write the option 2 inside double quotes
         c: "Unchanged",                  ///// Write the option 3 inside double quotes
         d: "More stable"                   ///// Write the option 4 inside double quotes
       },
